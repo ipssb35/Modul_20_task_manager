@@ -1,0 +1,79 @@
+<header class="container-fluid header">
+    <div class="row header__wrapper">
+        
+        <div class="col-8 header__userName">
+            hello, user
+        </div>
+
+        <div class="col-4 header__menu">
+            <a href="" class="link__menu">
+                <img src="../img/avatar.png" alt="user avatar" class="imgAvatar"/>
+                <img src="../img/down.png" alt="drop down" class="imgDropDown"/>
+                <img src="../img/up.png" alt="drop up" class="imgDropUp --dropHide"/>
+            </a>
+
+            <div class="dropHideMenu --dropHide">
+                <ul>
+                    <a href="" class="dropDownLink dropAccount"><li>my account</li></a>
+                    <a href="" class="dropDownLink dropLogout"><li>logout</li></a>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<content class="container-fluid content">
+    <div class="row content__wrapper">
+
+        <div class="createUser">
+            <button class="addUserBtn">add user</button>
+            <button class="delUserBtn">delete user</button>
+            <div class="delUsersDiv">
+            </div>
+        </div>        
+
+        <div class="col-12 col-md-3 card__wrapper">
+            <div class="cardItem cardBacklog">
+                <p>backlog</p>
+                <button type="button" class="button btnAddBacklog">add card</button>
+            </div>                
+        </div>
+
+        <div class="col-12 col-md-3 card__wrapper">
+            <div class="cardItem cardReady">
+                <p>ready</p>
+                <button type="button" class="button btnAddReady">add card</button>
+            </div>                
+        </div>
+
+        <div class="col-12 col-md-3 card__wrapper">
+            <div class="cardItem cardProgress">
+                <p>progress</p>
+                <button type="button" class="button btnAddProgress">add card</button>
+            </div>                
+        </div>
+
+        <div class="col-12 col-md-3 card__wrapper">
+            <div class="cardItem cardFinished">
+                <p>finished</p>
+                <button type="button" class="button btnAddFinished">add card</button>
+            </div>                
+        </div>
+
+    </div>
+</content>
+
+<footer class="container-fluid footer">
+    <div class="row footer__wrapper">
+
+        <div class="col-12 col-md-6 footerTasks">
+            <p>active tasks: *, finished tasks: *</p>
+        </div>
+
+        <div class="col-12 col-md-6 footerBoard">
+            <p>kanban board by *Name*, *Year*</p>
+        </div>
+
+    </div>
+</footer>

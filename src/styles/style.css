@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+#app-login-btn {
+    width: 160px;
+}
+
+.welcome {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* nav */
+
+.auth {
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    min-height: 350px;
+    min-width: 100vw;
+    background: #0079BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__wrapper {
+    padding: 30px;
+    width: 350px;
+    background: #EBECF0;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #01598b;
+}
+
+.auth__wrapper h3 { margin-bottom: 30px; }
+.auth__wrapper input { width: 100%; }
+.auth__wrapper button { padding: 7px 0; }
+
+/* header */
+
+.header {
+    background: #0067A3;
+    padding: 0;
+    color: #fff;
+    flex: 0 0 auto;
+}
+
+.header__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1235px;
+}
+
+.header__userName {
+    font-size: 18px;
+    padding: 18px 0 18px 20px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 20px 12px 0;
+    position: relative;
+}
+
+.--dropHide { display: none; }
+
+.dropHideMenu {
+    background: #EBECF0;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: 200px;
+    z-index: 1;
+    color: #000;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
+.dropHideMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropHideMenu li {
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.dropHideMenu li:hover {
+    background: #0079BF;
+    color: #fff;
+}
+
+.dropDownLink {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.imgAvatar, .imgDrop {
+    outline: none;
+    border-radius: 20px;
+}
+
+.imgDropDown, .imgDropUp {
+    outline: none;
+    height: 8px;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.link__menu {
+    text-decoration: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* footer */
+
+.footer {
+    color: #fff;
+    padding: 0;
+    background: #0067A3;
+    flex: 0 0 auto;
+}
+
+.footer__wrapper {
+    max-width: 1235px;
+    margin: 0 auto;
+}
+
+.footerTasks {
+    text-align: left;
+    padding: 20px 0 10px 20px;
+}
+
+.footerBoard {
+    text-align: right;
+    padding: 20px 20px 10px 0;
+}
+
+.footerTasks p { padding: 0; margin: 0; }
+
+@media screen and (max-width: 767px) {
+    .footerTasks { padding: 20px 20px 5px 20px; text-align: right; }
+    .footerBoard { padding: 5px 20px 10px 20px; }
+}
+
+/* content */
+
+.content {
+    background: #0079BF;
+    padding: 0;
+    flex: 1 0 auto;
+}
+
+.content__wrapper {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 10px 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__wrapper { padding: 10px 8px; }
+
+.cardItem {
+    padding: 10px;
+    background: #EBECF0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardItem p { font-weight: bold; }
+
+.item {
+    padding: 10px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 5px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.itemDelete, .itemEdit {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border: 1px solid red;
+    outline: none;
+    border-radius: 3px;
+    padding: 3px 7px 3px 5px;
+    cursor: pointer;
+    background: #fff;
+    color: red;
+    z-index: 2;
+    display: none;
+}
+
+.itemEdit {
+    right: 48px;
+    border: 1px solid green;
+    color: green;
+}
+
+.itemDelete:hover {
+    background: red;
+    color: #fff;
+}
+.itemEdit:hover {
+    background: green;
+    color: #fff;
+}
+
+.item:hover .itemDelete { display: block; }
+.item:hover .itemEdit { display: block; }
+
+.button {
+    border: 0;
+    outline: none;
+    border: 1px solid #01598b;
+    border-radius: 3px;
+    margin: 15px 0 5px;
+    color: #01598b;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.button:hover {
+    background: #0067A3;
+    color: #fff;
+}
+
+.--disable {
+    border: 1px solid rgb(170, 170, 170);
+    color:  rgb(170, 170, 170);
+    cursor: auto;
+}
+
+.--disable:hover {
+    background: transparent;
+    color:  rgb(170, 170, 170);
+}
+
+.input {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.select {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 0;
+    margin: 5px 0;
+    color: #01598b;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.select ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liTask {
+    background: #0079BF;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    margin: 2px 0;
+    cursor: pointer;
+    display: none;
+}
+
+.liTask:first-child { margin-top: 12px; }
+.liTask:hover { background: #0067A3; }
+.select:hover .liTask { display: block; }
+
+.userName {
+    padding-left: 5px;
+    color: rgb(134, 133, 133);
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+/* create user */
+
+.createUser {
+    padding: 10px;
+    display: none;
+    flex-direction: row;
+    position: relative;
+}
+
+.createUser p {
+    text-align: center;
+}
+
+.createUserBtn, .addUserBtn, .delUserBtn {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: #0067A3;
+    border: 1px solid #01598b;
+    border-radius: 3px;
+    padding: 5px 15px;
+    width: 100px;
+}
+
+.delUserBtn {
+    width: 130px;
+    margin-left: 10px;
+}
+
+.createUserBtn:hover, 
+.addUserBtn:hover, 
+.delUserBtn:hover { background: #01598b; }
+
+.userInputLogin, .userInputPassword {
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    width: 130px;
+}
+
+.message {
+    color: #fff;
+    margin: 7px 0 0 10px;
+    padding: 0;
+}
+
+.delUsersDiv {
+    position: absolute;
+    width: 190px;
+    max-height: 200px;
+    overflow: auto;
+    left: 90px;
+    top: 50px;
+    background: #EBECF0;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 3px;
+    padding: 10px;
+    z-index: 10;
+    display: none;
+}
+
+.delItem {
+    background: #0079BF;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+.delItem:hover { background: #0067A3; }
+
+@media screen and (max-width: 767px) {
+    .createUser { flex-direction: column; }
+    .createUserBtn, .addUserBtn, .delUserBtn { 
+        width: 100%;
+    }
+    .delUserBtn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .userInputLogin, .userInputPassword {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .delUsersDiv { top: 98px; }
+}
